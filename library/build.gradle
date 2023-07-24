@@ -2,11 +2,13 @@ plugins {
     id "com.jfrog.bintray" version "1.8.4"
 }
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+//apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 34
+    //buildToolsVersion '34.0.0'
+
+    namespace 'de.clemenskeppler.materialsearchview'
 
     defaultConfig {
         minSdkVersion 15
@@ -26,10 +28,11 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }
 
+/*
 afterEvaluate {
     bintrayUpload.dependsOn 'assembleRelease'
     publish.dependsOn 'assembleRelease'
@@ -109,3 +112,4 @@ bintray {
         }
     }
 }
+*/

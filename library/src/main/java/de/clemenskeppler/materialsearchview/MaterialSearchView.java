@@ -273,12 +273,12 @@ public class MaterialSearchView extends FrameLayout {
     Resources resources = getResources();
     if (positionFromRight > 0) {
       positionOffset = (positionFromRight
-          * resources.getDimensionPixelSize(R.dimen.abc_action_button_min_width_material))
-          + resources.getDimensionPixelSize(R.dimen.abc_button_padding_horizontal_material) / 2;
+          * resources.getDimensionPixelSize(androidx.appcompat.R.dimen.abc_action_button_min_width_material))
+          + resources.getDimensionPixelSize(androidx.appcompat.R.dimen.abc_button_padding_horizontal_material) / 2;
     }
-    positionOffset += getResources().getDimensionPixelSize(R.dimen.abc_action_button_min_width_material) / 2;
+    positionOffset += getResources().getDimensionPixelSize(androidx.appcompat.R.dimen.abc_action_button_min_width_material) / 2;
     if (hasOverflow) {
-      overflowOffset = resources.getDimensionPixelSize(R.dimen.abc_action_button_min_width_overflow_material);
+      overflowOffset = resources.getDimensionPixelSize(androidx.appcompat.R.dimen.abc_action_button_min_width_overflow_material);
     }
     TypedValue tv = new TypedValue();
     if (getContext().getTheme().resolveAttribute(android.R.attr.actionBarSize, tv, true)) {

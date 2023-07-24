@@ -2,11 +2,12 @@
 
 buildscript {
     repositories {
-        jcenter()
+        //jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.android.tools.build:gradle:8.0.2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -15,14 +16,15 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        //jcenter()
+        mavenCentral()
         google()
         maven {
             url "https://maven.google.com"
         }
     }
 }
-
+/*
 group = 'de.clemenskeppler'
 version = '1.0.6'
 description = 'A lightweight material search view'
@@ -54,3 +56,4 @@ ext {
         }
     }
 }
+*/
